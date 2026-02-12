@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A creepy story</title>
+    <style>
+        body.dark{
+            background-color: black;
+            color: aliceblue;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>The basement</h1>
+    <p id="story"> I wanted to find my friend and he i hiding in the basement</p>
+    <button onclick="showDark()">Show Dark</button>
+    <button onclick="next()">Next</button>
+    <script>
+        function showDark(){
+            document.body.className="dark";
+        }
+        function next(){
+document.getElementById ("story").innerHTML="I carefully searched you and then found you"
+        }
+    </script>
+</body>
+</html>
